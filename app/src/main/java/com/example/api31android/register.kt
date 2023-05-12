@@ -82,6 +82,7 @@ class register : AppCompatActivity() {
                         .show()
                 }
 
+
             }
 
             override fun onFailure(call: Call<ResponseBody?>, t: Throwable) {
