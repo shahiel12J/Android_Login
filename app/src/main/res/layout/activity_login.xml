@@ -4,74 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".LoginActivity">
 
-    <include
-        android:id="@+id/head"
-        layout="@layout/activity_header"/>
-
-    <include
-        android:id="@+id/foot"
-        layout="@layout/activity_footer" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="264dp"
+        android:layout_height="400dp"
         android:backgroundTint="@color/lightBlue"
-        app:layout_constraintBottom_toBottomOf="@+id/foot"
-        app:layout_constraintEnd_toEndOf="@+id/head"
-        app:layout_constraintStart_toStartOf="@+id/head"
-        app:layout_constraintTop_toTopOf="@+id/head"
-        app:layout_constraintVertical_bias="0.872"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
         <TextView
+            android:fontFamily="cursive"
             android:id="@+id/textView2"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="126dp"
+            android:layout_marginLeft="101dp"
             android:layout_marginTop="20dp"
-            android:textSize="20dp"
-            android:text="Login" />
+            android:text="Login"
+            android:textSize="45dp" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
             android:layout_marginTop="70dp"
             android:ems="10"
-            android:layout_marginLeft="45dp"
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/pass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
             android:layout_marginLeft="45dp"
+            android:layout_marginTop="150dp"
             android:ems="10"
             android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnLogin"
+            android:layout_width="264dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="230dp"
+            android:layout_marginLeft="18dp"
             android:layout_marginBottom="15dp"
-            android:layout_marginLeft="105dp"
             android:backgroundTint="@color/DarkBlue"
             android:text="Login" />
 
         <Button
             android:id="@+id/btnReg"
-            android:layout_width="wrap_content"
+            android:layout_width="264dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="95dp"
+            android:layout_marginLeft="18dp"
             android:layout_marginTop="300dp"
             android:layout_marginBottom="10dp"
-            android:textSize="16dp"
-            android:text="Register" />
+            android:backgroundTint="@color/DarkBlue"
+            android:text="Register"
+            android:textSize="16dp" />
 
 
     </androidx.cardview.widget.CardView>

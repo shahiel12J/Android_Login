@@ -24,6 +24,7 @@ class register : AppCompatActivity() {
         var PasswordString: String
         var btnRegUser: Button
 
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
@@ -36,6 +37,7 @@ class register : AppCompatActivity() {
 
             registerUser(Username,Password)
         }
+
     }
 
     fun getData(Name: String) {
