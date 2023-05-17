@@ -7,30 +7,35 @@
     android:background="@drawable/background"
     tools:context=".register">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="45dp"
+        android:textColor="@color/test"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/lightBlue"
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
-        <TextView
-            android:fontFamily="cursive"
-            android:id="@+id/textView2"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="88dp"
-            android:layout_marginTop="20dp"
-            android:text="Register"
-            android:textSize="45dp" />
 
         <EditText
             android:id="@+id/name"
+            android:hint="Username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="45dp"
@@ -40,6 +45,7 @@
 
         <EditText
             android:id="@+id/password"
+            android:hint="Password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="45dp"
@@ -54,8 +60,8 @@
             android:layout_marginLeft="18dp"
             android:layout_marginTop="250dp"
             android:layout_marginBottom="10dp"
-            android:text="Register"
             android:backgroundTint="@color/DarkBlue"
+            android:text="Register"
             android:textColor="@color/white"
             android:textSize="16dp" />
 

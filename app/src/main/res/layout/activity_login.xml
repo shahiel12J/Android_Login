@@ -8,29 +8,35 @@
     tools:context=".LoginActivity">
 
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="45dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/test"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="300dp"
         android:layout_height="400dp"
-        android:backgroundTint="@color/lightBlue"
 
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
-        <TextView
-            android:fontFamily="cursive"
-            android:id="@+id/textView2"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="101dp"
-            android:layout_marginTop="20dp"
-            android:text="Login"
-            android:textSize="45dp" />
 
         <EditText
+            android:hint="Username"
             android:id="@+id/username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,6 +46,7 @@
             android:inputType="textEmailAddress" />
 
         <EditText
+            android:hint="Password"
             android:id="@+id/pass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,8 +59,8 @@
             android:id="@+id/btnLogin"
             android:layout_width="264dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="230dp"
             android:layout_marginLeft="18dp"
+            android:layout_marginTop="230dp"
             android:layout_marginBottom="15dp"
             android:backgroundTint="@color/DarkBlue"
             android:text="Login" />

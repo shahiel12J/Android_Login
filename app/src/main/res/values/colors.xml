@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="lightBlue">#A880D0DA</color>
+    <color name="white">#DDFFFFFF</color>
+    <color name="lightBlue">#D380D0DA</color>
     <color name="DarkBlue">#838383</color>
+    <color name="proBack">#4DA19D</color>
+    <color name="pro">#C7E3E1</color>
     <color name="Header">#59C3BE</color>
-    <color name="Headerd">#59C3BE</color>
+    <color name="test">#8B1850</color>
+
 
 </resources>
