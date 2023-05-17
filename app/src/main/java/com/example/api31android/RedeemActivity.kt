@@ -17,13 +17,16 @@ class RedeemActivity : AppCompatActivity() {
         Back = findViewById(R.id.back)
         Back.setOnClickListener {
             intent = Intent(this, DashboardActivity::class.java)
+            intent.putExtra("userName","")
             startActivity(intent)
         }
 
         btnSubmit = findViewById(R.id.btnsubmit)
         btnSubmit.setOnClickListener{
-            Toast.makeText(this, "Submitted Successfully", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, DashboardActivity::class.java))
+            Toast.makeText(this, "Voucher Redeemed", Toast.LENGTH_SHORT).show()
+            intent = Intent(this, DashboardActivity::class.java)
+            intent.putExtra("userName","")
+            startActivity(intent)
         }
     }
 }

@@ -197,9 +197,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
+        android:textColor="@color/test"
         android:text="Rate Our Services"
         android:fontFamily="sans-serif-condensed"
-
         android:textSize="50dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

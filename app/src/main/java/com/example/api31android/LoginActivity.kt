@@ -81,7 +81,7 @@ class LoginActivity : AppCompatActivity() {
                     intent.putExtra("userName", userName)
                     Toast.makeText(
                         this@LoginActivity,
-                        "Successfully login",
+                        "Successfully login ",
                         Toast.LENGTH_LONG
                     ).show()
                     startActivity(intent)

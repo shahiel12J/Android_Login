@@ -20,7 +20,7 @@
         android:padding="10dp"
         android:text="Bookings Below"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/test"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"

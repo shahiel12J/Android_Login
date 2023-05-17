@@ -14,6 +14,12 @@ private lateinit var Back: Button
 private lateinit var status: TextView
 private var progressValue: Int = 0
 
+private lateinit var progress1: Button
+private lateinit var progress2: Button
+private lateinit var progress3: Button
+private lateinit var progress4: Button
+private lateinit var progress5: Button
+
 class TrackActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,11 +31,41 @@ class TrackActivity : AppCompatActivity() {
         Back = findViewById(R.id.Back)
         Back.setOnClickListener {
             intent = Intent(this, DashboardActivity::class.java)
+            intent.putExtra("userName","")
             startActivity(intent)
         }
-        progressValue = 25
-        setProgressBar(progressValue)
-        checkProgress(progressValue)
+
+        progress1 = findViewById(R.id.progress1)
+        progress1.setOnClickListener {
+            progressValue = 0
+            setProgressBar(progressValue)
+            checkProgress(progressValue)
+        }
+        progress2 = findViewById(R.id.progress2)
+        progress2.setOnClickListener {
+            progressValue = 25
+            setProgressBar(progressValue)
+            checkProgress(progressValue)
+        }
+        progress3 = findViewById(R.id.progress3)
+        progress3.setOnClickListener {
+            progressValue = 50
+            setProgressBar(progressValue)
+            checkProgress(progressValue)
+        }
+        progress4 = findViewById(R.id.progress4)
+        progress4.setOnClickListener {
+            progressValue = 75
+            setProgressBar(progressValue)
+            checkProgress(progressValue)
+        }
+        progress5 = findViewById(R.id.progress5)
+        progress5.setOnClickListener {
+            progressValue = 100
+            setProgressBar(progressValue)
+            checkProgress(progressValue)
+        }
+
     }
     fun setProgressBar(value:Int) {
         return progressBar.setProgress(value)

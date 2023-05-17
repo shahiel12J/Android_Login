@@ -52,12 +52,15 @@ class RateActivity : AppCompatActivity() {
 
         btnBack.setOnClickListener{
             intent = Intent(this, DashboardActivity::class.java)
+            intent.putExtra("userName","")
             startActivity(intent)
         }
 
         btnSubmit.setOnClickListener{
             Toast.makeText(this, "Submitted Successfully", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, DashboardActivity::class.java))
+            intent = Intent(this, DashboardActivity::class.java)
+            intent.putExtra("userName","")
+            startActivity(intent)
         }
 
 

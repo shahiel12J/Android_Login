@@ -24,14 +24,20 @@ class BookingActivity : AppCompatActivity() {
 
         pickDateBtn = findViewById(R.id.idBtnPickDate)
         selectedDateTV = findViewById(R.id.idTVSelectedDate)
-        this.findViewById<TextView>(R.id.backButton).setOnClickListener {
-            startActivity(Intent(this, DashboardActivity::class.java))
+        backButton = findViewById(R.id.backButton)
+
+        backButton.setOnClickListener{
+            intent = Intent(this, DashboardActivity::class.java)
+            intent.putExtra("userName","")
+            startActivity(intent)
         }
 
         btnSubmit = findViewById(R.id.submitBooking)
-        btnSubmit.setOnClickListener{
+        btnSubmit.setOnClickListener{intent.putExtra("userName","")
             Toast.makeText(this, "Submitted Successfully", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, DashboardActivity::class.java))
+            intent = Intent(this, DashboardActivity::class.java)
+            intent.putExtra("userName","")
+            startActivity(intent)
         }
 
         // on below line we are adding
